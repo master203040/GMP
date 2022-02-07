@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:usersapp/pages/Grafict.dart';
 import 'package:usersapp/pages/Home.dart';
 import 'package:usersapp/pages/Setting.dart';
+import 'package:usersapp/pages/Ot.dart';
 import 'package:usersapp/pages/User.dart';
 
 
@@ -21,9 +22,10 @@ class _MyAppState extends State<MyApp> {
   //funsion para cambiar la paginas de la barra de navegacion
   List<Widget>_Paginas =[
     const PaginaHome(),
-    const PaginaUser(),
+    const PaginaOt(),
     const PaginaSetting(),
     const PaginaGrafict(),
+    const PaginaUser(),
 
   ];
 
@@ -67,9 +69,11 @@ class _MyAppState extends State<MyApp> {
           //array para los bottomNavigationBar
           items: const [
             BottomNavigationBarItem(icon:Icon(Icons.home),label: "Inicio"),
-            BottomNavigationBarItem(icon:Icon(Icons.supervised_user_circle),label:"Usuarios"),
+            BottomNavigationBarItem(icon:Icon(Icons.article_outlined ),label:"OT"),
             BottomNavigationBarItem(icon:Icon(Icons.settings),label:"Conficuracion"),
             BottomNavigationBarItem(icon:Icon(Icons.add_chart),label:"Graficas"),
+            BottomNavigationBarItem(icon:Icon(Icons.account_circle),label:"Usuario"),
+           
           ],
         ),
       ),
